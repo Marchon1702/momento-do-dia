@@ -48,10 +48,12 @@
             secaoDia.style.display = 'flex'
             secaoTarde.style.display = 'none'
             secaoNoite.style.display = 'none'
+            horasvar.innerHTML = `Agora são ${horaAtual} horas.`
           } else if (horaAtual >= 12 && horaAtual <= 18) {
             secaoDia.style.display = 'none'
             secaoTarde.style.display = 'flex'
             secaoNoite.style.display = 'none'
+            horasvar2.innerHTML = `Agora são ${horaAtual} horas.`
           } else {
             secaoDia.style.display = 'none'
             secaoTarde.style.display = 'none'

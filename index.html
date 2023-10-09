@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momento atual</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <Section id="fundodia">
+            <div id="frame-dia">
+                <h1 class="titulo">Horario atual</h1>
+                <p class="horas" id="horario">Agora são 5 horas.</p>
+                <img src="imagens/principal-dia.jpg" alt="casal tomando café" class="imgprincipal" >
+                <p class="texto" >Bom dia! Que este novo dia traga alegria e oportunidades. Sorria para o mundo, pois cada amanhecer é um presente. Acredite em si mesmo e vá em busca dos seus sonhos. Lembre-se, você é capaz de alcançar o que deseja. 😊🌟</p>
+            </div>
+        </Section>
+        <section id="fundotarde">
+                <div id="frame-tarde">
+                    <h1 class="titulo">Horario atual</h1>
+                    <p class="horas2">Agora são 16 horas.</p>
+                    <img src="imagens/principal-tarde.jpg" alt="Pessoas se divertindo à tarde" class="imgprincipal">
+                    <p class="texto">Tenha uma tarde cheia de sorrisos e energias positivas. Que seus desejos se realizem e que aproveite para relaxar e se preparar para o que está por vir. 😊🌞</p>
+                </div>
+        </section>
+        <section id="fundonoite">
+              <div id="frame-noite">
+                <h1 class="titulo">Horario atual</h1>
+                <p class="horas3">Agora são 22 horas.</p>
+                <img src="imagens/principal-noite.jpg" alt="Homem dormindo." class="imgprincipal">
+                <p class="texto">Boa noite! Que a tranquilidade desta hora seja o prelúdio de sonhos repletos de alegria e paz. Desejo que você descanse profundamente e acorde revigorado(a) para um novo dia. Durma bem e que as estrelas iluminem seus sonhos. 🌙✨😴</p>
+              </div>
+        </section>
+    </main>
+    <script>
+          var agora = new Date()
+          var horaAtual = agora.getHours()
+    
+          var secaoDia = document.getElementById('fundodia')
+          var secaoTarde = document.getElementById('fundotarde')
+          var secaoNoite = document.getElementById('fundonoite')
+          var horasvar = document.querySelector('.horas')
+          var horasvar2 = document.querySelector('.horas2')
+          var horasvar3 = document.querySelector('.horas3')
+
+          if (horaAtual >= 5 && horaAtual <= 11) {
+            secaoDia.style.display = 'flex'
+            secaoTarde.style.display = 'none'
+            secaoNoite.style.display = 'none'
+          } else if (horaAtual >= 12 && horaAtual <= 18) {
+            secaoDia.style.display = 'none'
+            secaoTarde.style.display = 'flex'
+            secaoNoite.style.display = 'none'
+          } else {
+            secaoDia.style.display = 'none'
+            secaoTarde.style.display = 'none'
+            secaoNoite.style.display = 'flex'
+            horasvar3.innerHTML = `Agora são ${horaAtual} horas.`
+          }
+
+      </script>
+</body>
+</html>

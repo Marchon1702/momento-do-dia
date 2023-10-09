@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font: normal 1em arial;
+}
+
+main {
+    height: 100vh;
+    background-color: black;
+}
+
+section#fundodia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../imagens/fundo-dia.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#frame-dia {
+    width: 500px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.678);
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+
+h1.titulo {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(92, 87, 87);
+    text-shadow: 1px 1px 1px black;
+}
+
+section#fundotarde {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../imagens/fundo-tarde.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#frame-tarde {
+    width: 500px;
+    height: 430px;
+    background-color: rgba(255, 255, 255, 0.678);
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+
+section#fundonoite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../imagens/fundo-noite.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+div#frame-noite {
+    width: 500px;
+    height: 460px;
+    background-color: rgba(255, 255, 255, 0.678);
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px black;
+}
+
+.horas, .horas2, .horas3 {
+    display: block;
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.329);
+    border-radius: 20px;
+    color: white;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+
+.imgprincipal {
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.texto {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.651);
+    margin: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+    color: white;
+}
+
+@media screen and (max-width:500px) {
+    div#frame-dia, div#frame-tarde, div#frame-noite {
+        width: 350px;
+        height: 500px;
+    }
+}

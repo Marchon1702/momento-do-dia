@@ -114,6 +114,6 @@ div#frame-noite {
 @media screen and (max-width:500px) {
     div#frame-dia, div#frame-tarde, div#frame-noite {
         width: 350px;
-        height: 500px;
+        height: 550px;
     }
 }
